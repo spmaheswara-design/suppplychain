@@ -1,0 +1,74 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+.env
+
+# typescript
+*.tsbuildinfo
+
+app-example
+
+# generated native folders
+/ios
+/android
+
+# ============================================================================
+# Project-specific: Documentation and Setup Files
+# ============================================================================
+
+# Cursor AI configuration files
+.cursor-prompt
+.cursor-rules
+
+# SQL setup/migration files
+*.sql
+
+# Documentation and setup guides
+SETUP.md
+QUICKSTART.md
+PROJECT_SUMMARY.md
+ADMIN_DASHBOARD_SETUP.md
+ADMIN_FEATURE_SUMMARY.md
+CREATE_ADMIN_USER.md
+VERIFY_ADMIN.md
+TESTING_MODE.md
+EMAIL_VERIFICATION_SETUP.md
+SUPPLY_CHAIN_FEATURES.md
+FEATURE_SUGGESTIONS.md
+FIX_INFINITE_RECURSION.sql
+RUN_THIS_FIX.sql
+SUPABASE_EMAIL_FIX.md
+
+# Keep only essential README
+# README.md is included by default (not ignored)

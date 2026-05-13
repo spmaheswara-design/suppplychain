@@ -1,13 +1,45 @@
-> Why do I have a folder named ".expo" in my project?
+# SmartSupply Connect
 
-The ".expo" folder is created when an Expo project is started using "expo start" command.
+AI-powered complaint routing system for supply chain management.
 
-> What do the files contain?
+## Features
 
-- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
-- "settings.json": contains the server configuration that is used to serve the application manifest.
+- 🔐 User authentication with email verification
+- 📝 Text and voice complaint submission
+- 🤖 AI-powered complaint classification (OpenAI GPT-4 & Whisper)
+- 📧 Automated email notifications (Resend)
+- 📊 Admin dashboard with analytics
+- 📱 Cross-platform (iOS, Android, Web)
 
-> Should I commit the ".expo" folder?
+## Quick Start
 
-No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
-Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Configure Environment
+
+Edit `app.json` and add your API keys in the `extra` section:
+
+```json
+{
+  "expo": {
+    "extra": {
+      "SUPABASE_URL": "your_supabase_project_url",
+      "SUPABASE_ANON_KEY": "your_supabase_anon_key",
+      "OPENAI_API_KEY": "your_openai_api_key",
+      "RESEND_API_KEY": "your_resend_api_key"
+    }
+  }
+}
+```
+
+
+
+
+
+## License
+
+MIT
